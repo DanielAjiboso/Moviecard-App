@@ -1,7 +1,7 @@
 import {createBrowserRouter, Route, createRoutesFromElements, RouterProvider} from 'react-router-dom'
 import RootLayout from './RootLayout';
 import Home, { moviesLoader } from './pages/Home';
-import Trailer from './pages/Trailer';
+import Trailer, { trailerLoader } from './pages/Trailer';
 
 
 // const router = createBrowserRouter(
@@ -15,7 +15,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element = {<RootLayout />} >
       < Route index element = {<Home />} loader={moviesLoader} />
-      <Route path=':title' element={<Trailer />} />
+      <Route path=':title' element={<Trailer />} loader={trailerLoader} />
     </Route>
   )
 ) 
