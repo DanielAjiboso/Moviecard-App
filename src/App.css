@@ -1,3 +1,52 @@
 .App {
   text-align: center;
 }
+
+.link{
+  text-decoration: none;
+  color: black;
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.header-body{
+  width: 40%;
+  margin: auto auto auto 10px;
+  text-decoration: none;
+  /* background-color: rgba(0, 0, 0, 0.301); */
+}
+.search-bar{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+}
+
+.moviecard-layout{
+  display: flex;
+  flex-wrap: wrap;
+ width: fit-content;
+ align-items: center;
+ justify-content: center;
+ 
+
+}
+
+.moviecard{
+padding: 15px;
+}
+
+.moviecard>img{
+  width: 28vw;
+  
+}
+
+
+
+
+
+

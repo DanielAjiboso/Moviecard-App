@@ -1,14 +1,33 @@
-import { useLoaderData, useParams } from "react-router-dom"
+import { useEffect, useState } from "react"
+import { Link, useLoaderData, useParams } from "react-router-dom"
 
 export default function Trailer (){
     const {title} =  useParams()
     const movieDetails = useLoaderData()
-    console.log(movieDetails.items[0].id.videoId);
+    // console.log(movieDetails.items[0].id.videoId);
     const trailerId =  movieDetails.items[0].id.videoId 
     // const movie = useLoaderData()  
+
+    const [video, setVideo] = useState(true)
+    const [videoDetails, setVideoDetails] = useState('')
+
+    const switchVideo = function(){
+        document.getElementsByClassName('active').classList.remove('active')
+        this.classList.add('active')
+        setVideo(false)
+    }
     return (
         <div className="trailer">
-            <iframe width={560} height={315} src={`https://www.youtube.com/embed/${trailerId}`}></iframe>
+            <div className="sidebar">
+                <h1 className="active">Trailer</h1>
+                <h1 onClick={switchVideo}>About Movie</h1>
+                <Link className="link" to={'/'}><h1>Back to Homepage</h1></Link>
+            </div>
+        
+            <iframe  className="trailer-video" src={`https://www.youtube.com/embed/${trailerId}`}></iframe>
+            
+
+        
         </div>
     )
 }

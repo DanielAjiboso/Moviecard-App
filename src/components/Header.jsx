@@ -16,14 +16,14 @@ export default function Header (props){
         >
             <div className="header-body">
         {/* <img src={img_src} alt="Image" /> */}
-        <div className="searchBar">
-          <div>
-            <p>MovieBox</p>
-          </div>
+        <div className="search-bar">
+          
+            <h2>MovieBox</h2>
+        
           <input type="text" />
-          <div>
+          
             <p>Sign In</p>
-          </div>
+          
         </div>
         <div className="header-details">
           <h1>{props.movie.title}</h1>
@@ -40,6 +40,7 @@ export default function Header (props){
             </div>
           </div>
           <p className="header-overview">{props.movie.overview}</p>
+          
           <input type="button" value="Watch Trailer" className="button" />
         </div>
       </div>

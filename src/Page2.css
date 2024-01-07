@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.trailer{
+    display: flex;
+    width: 100vw;
+    height: 99.5vh;
+}
+
+.sidebar{
+    background-color: antiquewhite;
+    border: 6px solid purple;
+    width: 25vw;
+    color: purple;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10vh;
+}
+.sidebar>.link{
+    color: purple;
+}
+.active{
+    color: white;
+    background-color: purple;
+    width: 25vw;
+}
+
+.trailer-video{
+    width: 74vw;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+
