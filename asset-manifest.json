@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Moviecard-App/static/css/main.2ac72d9b.css",
+    "main.js": "/Moviecard-App/static/js/main.122947a6.js",
+    "index.html": "/Moviecard-App/index.html",
+    "main.2ac72d9b.css.map": "/Moviecard-App/static/css/main.2ac72d9b.css.map",
+    "main.122947a6.js.map": "/Moviecard-App/static/js/main.122947a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ac72d9b.css",
+    "static/js/main.122947a6.js"
+  ]
+}
